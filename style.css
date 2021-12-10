@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --purple:#8548be;
+}
+*{
+    font-family: 'Nunito' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+*::selection{
+    background: var(--purple);
+    color: white;
+}
+
+ html{
+     font-size: 62.5%;
+     overflow-x: hidden;
+     scroll-padding-top: 6rem;
+     scroll-behavior: smooth;
+ }
+ section{
+     padding: 1.5rem 9%;
+ }
+
+ .heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(55, 0, 255, 0.2);
+    color: var(--purple);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    /* display: inline-block; */
+}
+.heading span.space{
+    background: none;
+}
+ /* h3{
+    color: #333;
+    font-size: 2.5rem;
+} */
+
+ .btn{
+     display: inline-block;
+     margin-top: 1rem;
+     background: var(--purple);
+     color: #fff;
+     padding: .8rem 3rem;
+     border: .2rem solid var(--purple);
+     cursor: pointer;
+     font-size: 1.7rem;
+     width: 100%;
+     justify-content: center;
+     text-align: center;
+     border-radius: .9rem;
+ }
+ 
+
+ .btn:hover{
+    background: rgba(55, 0, 255, 0.2);
+     color:var(--purple);
+     
+ }
+ header{
+     position: sticky;
+     top: 0;
+     left: 0;
+     right: 0;
+     background: #333;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 2rem 9%;
+ }
+ header .logo{
+
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    
+ }
+ header .logo span{
+     color: var(--purple);
+ }
+ 
+
+
+
+
+
+ .question.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.question .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem ;
+    text-align: center;
+}
+
+.question .box-container .box h3{
+    
+    font-size: 2.5rem;
+    color: #333;
+}
+.question .box-container .box p{
+    
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+
+}
+.question .box-container .box:hover{
+    box-shadow: 2rem 1rem 2rem  rgba(0, 0, 0, 1);
+}

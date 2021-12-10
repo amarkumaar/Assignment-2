@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Question_2</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    font-family: 'Nunito' , sans-serif;
+    margin:0;
+    padding:0;
+    text-transform: capitalize;
+
+}
+body{
+    background: #444;
+}
+
+div{
+    margin:30px;
+    padding:34px;
+}
+#box-1 h1{
+    color:rgb(16, 224, 109);
+    padding: 12px;
+    font-size:40px;
+
+}
+#box-2 h1{
+    color:rgb(195, 85, 199);
+}
+#box-1{
+    background-color: rgb(118, 124, 62);
+    border: 2px solid black;
+    border-radius: .8rem;
+}
+    #box-1 p{
+    color:rgb(255, 174, 0);
+    font-style: italic;
+    }
+#box-2{
+    background-color:rgb(74, 44, 122);
+    border: 2px solid black;
+    border-radius: .8rem;
+}
+#box-2 h1{
+    margin:4px;
+    padding:23px;
+}
+#box-2 p{
+    font-style:bold ;
+    color: rgb(245, 189, 121);
+
+}
+    </style>
+</head>
+<body><div id="box-1">
+    <h1>External CSS</h1>
+    <p>
+        The external style sheet is generally used when you want to make changes on multiple pages. It is ideal for this condition because it facilitates you to change the look of the entire web site by changing just one file.
+
+        It uses the <link> tag on every pages and the <link> tag should be put inside the head section.
+        
+        Example:
+        <pre>
+        &lt;head&gt;
+        &lt;link&gt; rel="stylesheet" type="text/css" href="mystyle.css">  
+        &lt;/head&gt; 
+        The external style sheet may be written in any
+        text editor but must be saved with a .
+        css extension. This file should not contain HTML elements.
+        </pre>
+        
+    </p>
+    </div>
+    <div id="box-2">
+        <h1>
+            The advantages of External Style sheets are:</h1>
+        <p>The style of several documents can be controlled from site by using them.
+            Multiple HTML elements can have many documents, where classes can be created.
+            To group styles in complex situations, selector and grouping methods are used.
+            Demerits of external css are as follows:
+            
+            Extra download is needed to import documents having style information.
+            To render the document, the external style sheet should be loaded.
+            Not practical for small style definitions.</p>
+    </div>
+
+
+</body>
+</html>

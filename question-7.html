@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-7</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        h1,
+        p {
+            margin: 23px;
+            padding: 12px;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        pre {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 23px;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-padding-top: 6rem;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(73, 155, 104);
+            color: aliceblue;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 2.5rem 0;
+        }
+
+        .heading span {
+            font-size: 3.5rem;
+            background: rgba(55, 0, 255, 0.2);
+            color: rgb(150, 34, 34);
+            border-radius: .5rem;
+            padding: .2rem 1rem;
+            /* display: inline-block; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>t</span>
+        <span>t</span>
+        <span>i</span>
+        <span>m</span>
+        <span>e</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span>(</span>
+        <span>)</span>
+
+    </h1>
+    <h2>wait some second </h2>
+    <p>The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer
+        expires.</p>
+    <pre>
+        <span style="font-size:30px;">Parameters</span>
+
+        <b>function</b>
+        A function to be executed after the timer expires.
+        
+       <b> code</b>
+        An alternative syntax that allows you to include a string instead
+        
+        of a function, which is compiled and executed when the timer expires.
+        This syntax is not recommended for the same reasons that make using eval() a security risk.
+        
+        delay Optional
+        The time, in milliseconds that the timer should wait 
+        before the specified function or code is executed.
+        If this parameter is omitted, a value of 0 is used, 
+        meaning execute "immediately", or more accurately, 
+        the next event cycle. Note that in either case, the 
+        actual delay may be longer than intended; 
+        see Reasons for delays longer than specified below.
+        Return value</pre>
+    <script>
+        function bgchange() {
+
+            document.body.style.backgroundColor = "orange";
+        }
+        setTimeout(bgchange, 3000)
+    </script>
+</body>
+
+</html>

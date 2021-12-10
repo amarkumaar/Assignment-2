@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+        *{
+            font-family: 'Nunito' , sans-serif;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        body{
+
+
+            background: #444;
+            background: radial-gradient( #b825c5 , #dabcd8);
+        }
+       
+       
+        input,select{
+            position:relative;
+            width:100%;
+            padding:6px;
+            margin:4px 0px 0px 0px;
+            border:2px solid #8548be;
+            border-radius: 4px;
+           
+        }
+        .form{
+            width:500px;
+            display: block;
+            margin:23px auto;
+            padding:23px 43px;
+            background: rgba(207, 125, 240, 0.664);
+            box-shadow:0px 0px 10px;
+            border-radius: 6px;
+           
+        }
+
+        .box-inline input{
+            display: inline-block;
+            width:auto;
+            padding:12px;
+            border:1px solid #8548be;
+            border-radius: 4px;
+
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 7px;
+            color:#8548be;
+            letter-spacing: 1px;
+        }
+        .box-inline {
+          border: 1px solid #ccc;
+          padding: 8px 10px 4px;
+          border-radius: 2px;
+          border:2px solid #8548be;
+          border-radius: 4px;
+          margin:4px 0;
+          background-color: #fff;
+        }
+        .box{
+            margin:10px 0px;
+        }
+        .error{
+            margin-top:-2px;
+            color:#8548be;
+        }
+        input[type="submit"],input[type="reset"]{
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size:14px;
+            padding:7px;
+        }
+        input[type="submit"]:hover {
+            background-color:#8548be;
+            color:white;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <form class="form" action="#" name="form" onsubmit="return validateForm()">
+        <div class="container">
+        <h1>STUDENT REGISTRATION FORM</h1>
+
+        <div class="box" id="sub-box1">
+            <label for="name">Name</label>
+            <input type="text" name="myname" id="name" required>
+            <div class="error" id="nameError"></div>
+        </div>
+
+       
+
+
+        <div class="box" id="sub-box4">
+            <label for="addres">address</label>
+            <select name="course" id="course">
+                <option value="select">select</option>
+                <option value="Lucknow">luncknow</option> 
+                <option value="kanpur">nodia</option>
+                <option value="Lucknow">mumbai</option> 
+                <option value="kanpur">delhi</option>
+            </select>
+            <div class="error" id="courseError"></div>
+        </div>
+
+        <div class="box" id="sub-box5">
+            <label for="contact_number">age</label>
+            <input type="number" name="contact_number" id="contact_number" minlength="10" maxlength="10" required>
+            <div class="error" id="numberError"></div>
+        </div>
+        <div class="box" id="sub-box6">
+            <label for="email">Email Id</label>
+            <input type="email" name="email" id="email">
+            <div class="error" id="emailError"></div>
+        </div>
+       
+        
+        <div class="box" id="sub-box7">
+            <label for="movie">movie</label>
+            <input type="text" name="mymovie" id="movie" required>
+            <div class="error" id="movieError"></div>
+        </div>
+        
+        <div class="box" id="sub-box8">
+            <label for="singer">singer</label>
+            <input type="text" name="singer" id="singer" required>
+            <div class="error" id="singerError"></div>
+        </div>
+        <div class="box" id="sub-box9">
+            <input type="submit" id="sub" class="btn" name="submit" >
+            <!-- <input type="reset" id="reset" name="reset"> -->
+
+        </div>
+    </div>
+</form>
+    
